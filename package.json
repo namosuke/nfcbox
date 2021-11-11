@@ -1,0 +1,20 @@
+{
+  "name": "nfcbox",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "@chirimen/pca9685": "^1.0.7",
+    "express": "^4.17.1",
+    "node-nfcpy-id": "^0.1.1",
+    "node-web-gpio": "^1.0.10",
+    "node-web-i2c": "^1.1.14",
+    "socket.io": "^4.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

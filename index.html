@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>nfcbox</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1 style="font-size: 70px;text-align: center;margin-top: 200px">お届けありがとうございます！</h1>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+        let isOpen = true;
+        var socket = io();
+        socket.on('touched', (msg) => {
+            if (isOpen) {
+                document.querySelector('html').style.background = 'black';
+            } else {
+                document.querySelector('html').style.background = 'white';
+            }
+            isOpen = !isOpen;
+        });
+        </script>
+    </body>
+</html>
